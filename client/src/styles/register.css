@@ -1,0 +1,830 @@
+/* Practical 01 - Registration form, scoped to the Register page (Bootstrap removed) */
+.register-page {
+  --primary: #1769e0;
+  --primary-dark: #0c55bd;
+  --reg-border: #dce4ee;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #18283e;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(23,105,224,.12), transparent 28%),
+    radial-gradient(circle at 90% 90%, rgba(11,31,58,.09), transparent 30%),
+    #f4f7fb;
+/* ==========================================
+   MAIN WRAPPER
+========================================== */
+
+.registration-wrapper {
+    min-height: calc(100vh - 76px);
+
+    padding: 25px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ==========================================
+   MAIN CARD
+========================================== */
+
+.registration-card {
+    width: 1080px;
+
+    max-width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 38% 62%;
+
+    background: #ffffff;
+
+    border-radius: 26px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0, 0, 0, .04);
+
+    box-shadow:
+        0 25px 70px rgba(20, 48, 85, .15);
+}
+
+
+/* ==========================================
+   LEFT BRAND SECTION
+========================================== */
+
+.brand-section {
+    padding: 42px;
+
+    min-height: 650px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 90% 8%,
+            rgba(104, 187, 255, .28),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #091d37,
+            #0e3d76 62%,
+            #1769e0
+        );
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.reg-brand-logo {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: white;
+
+    color: var(--primary);
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .16);
+}
+
+
+.brand-name {
+    margin-top: 13px;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+    font-weight: 850;
+
+    letter-spacing: -.7px;
+}
+
+
+.brand-subtitle {
+    margin-top: 6px;
+
+    color: rgba(255, 255, 255, .48);
+
+    font-size: 9px;
+
+    letter-spacing: 1.6px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.brand-content {
+    margin-top: 78px;
+}
+
+
+.small-heading {
+    color: #7ebdff;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.brand-content h1 {
+    margin: 14px 0 0;
+
+    font-size: 40px;
+
+    line-height: 1.07;
+
+    letter-spacing: -1.8px;
+
+    font-weight: 850;
+}
+
+
+.brand-content h1 span {
+    color: #78bcff;
+}
+
+
+.brand-content p {
+    max-width: 330px;
+
+    margin-top: 19px;
+
+    color: rgba(255, 255, 255, .67);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.features {
+    margin-top: 30px;
+
+    display: grid;
+
+    gap: 13px;
+}
+
+
+.feature-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.feature-icon {
+    width: 22px;
+
+    height: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(116, 188, 255, .15);
+
+    color: #82c1ff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+.feature-item span {
+    color: rgba(255, 255, 255, .73);
+
+    font-size: 10px;
+}
+
+
+.brand-footer {
+    color: rgba(255, 255, 255, .36);
+
+    font-size: 9px;
+}
+
+
+/* ==========================================
+   RIGHT FORM
+========================================== */
+
+.form-section {
+    padding: 38px 52px 34px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+/* ==========================================
+   MAIN STAYNEST HEADING
+========================================== */
+
+.main-brand-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 27px;
+}
+
+
+.main-logo {
+    width: 55px;
+
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1769e0,
+            #0b4fae
+        );
+
+    color: white;
+
+    font-size: 27px;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 9px 22px rgba(23, 105, 224, .23);
+}
+
+
+.main-brand-text h2 {
+    margin: 0;
+
+    color: #0b1f3a;
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -1.3px;
+}
+
+
+.main-brand-text p {
+    margin: 5px 0 0;
+
+    color: #7b889a;
+
+    font-size: 11px;
+
+    letter-spacing: .3px;
+}
+
+
+/* ==========================================
+   LABELS
+========================================== */
+
+.form-label {
+    margin-bottom: 5px;
+
+    color: #26384f;
+
+    font-size: 10px;
+
+    font-weight: 750;
+}
+
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.form-control,
+.form-select {
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--reg-border);
+
+    border-radius: 8px;
+
+    color: #192a40;
+
+    background: #fff;
+
+    font-size: 11px;
+
+    transition: all .2s ease;
+}
+
+
+.form-control::placeholder {
+    color: #a5afbc;
+}
+
+
+.form-control:hover,
+.form-select:hover {
+    border-color: #c7d3e1;
+}
+
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #4b91e8;
+
+    box-shadow:
+        0 0 0 3px rgba(23, 105, 224, .08);
+}
+
+
+/* ==========================================
+   MOBILE PREFIX
+========================================== */
+
+.input-group-text {
+    height: 42px;
+
+    border: 1px solid var(--reg-border);
+
+    background: #f7f9fc;
+
+    color: #63738a;
+
+    font-size: 10px;
+
+    font-weight: 750;
+}
+
+
+.input-group .form-control {
+    border-radius: 0 8px 8px 0;
+}
+
+
+/* ==========================================
+   PASSWORD
+========================================== */
+
+.password-wrapper {
+    position: relative;
+}
+
+
+.password-wrapper .form-control {
+    padding-right: 55px;
+}
+
+
+.show-button {
+    position: absolute;
+
+    top: 5px;
+
+    right: 6px;
+
+    height: 32px;
+
+    padding: 0 9px;
+
+    border: 0;
+
+    border-radius: 6px;
+
+    background: #eef3f9;
+
+    color: #53657b;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.show-button:hover {
+    background: #e4ebf4;
+}
+
+
+/* ==========================================
+   TERMS
+========================================== */
+
+.terms-area {
+    margin-top: 2px;
+}
+
+
+.form-check {
+    display: flex;
+
+    align-items: center;
+
+    gap: 3px;
+}
+
+
+.form-check-input {
+    width: 14px;
+
+    height: 14px;
+
+    margin-top: 0;
+}
+
+
+.form-check-input:checked {
+    background-color: var(--primary);
+
+    border-color: var(--primary);
+}
+
+
+.form-check-label {
+    color: #7a8798;
+
+    font-size: 9px;
+}
+
+
+.form-check-label strong {
+    color: #49617d;
+}
+
+
+/* ==========================================
+   CREATE ACCOUNT BUTTON
+========================================== */
+
+.register-button {
+    width: 100%;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 9px 0 17px;
+
+    border: 0;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1769e0,
+            #0c55bd
+        );
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 750;
+
+    box-shadow:
+        0 9px 23px rgba(23, 105, 224, .20);
+
+    transition: all .2s ease;
+
+    cursor: pointer;
+}
+
+
+.register-button:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 13px 28px rgba(23, 105, 224, .28);
+}
+
+
+.arrow {
+    width: 28px;
+
+    height: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: rgba(255, 255, 255, .14);
+
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   GOOGLE AREA - LAST
+========================================== */
+
+.google-area {
+    margin-top: 17px;
+}
+
+
+.google-divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 12px;
+}
+
+
+.google-divider span {
+    flex: 1;
+
+    height: 1px;
+
+    background: #e6ebf1;
+}
+
+
+.google-divider small {
+    color: #a1adbb;
+
+    font-size: 8px;
+
+    font-weight: 800;
+}
+
+
+/* ==========================================
+   GOOGLE BUTTON
+========================================== */
+
+.google-button {
+    width: 100%;
+
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: 1px solid #dce4ed;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #26374d;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+
+.google-button:hover {
+    border-color: #c8d4e2;
+
+    background: #fafbfd;
+
+    box-shadow:
+        0 7px 18px rgba(20, 45, 80, .08);
+
+    transform: translateY(-1px);
+}
+
+
+.google-icon {
+    flex-shrink: 0;
+}
+
+
+/* ==========================================
+   VALIDATION
+========================================== */
+
+.invalid-feedback {
+    margin-top: 3px;
+
+    font-size: 9px;
+}
+
+
+.is-invalid {
+    border-color: #dc3545 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(220, 53, 69, .05) !important;
+}
+
+
+/* ==========================================
+   SUCCESS
+========================================== */
+
+.success-message {
+    margin-top: 13px;
+
+    padding: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    border: 1px solid #bce5ca;
+
+    border-radius: 8px;
+
+    background: #f0fbf4;
+
+    color: #176b3a;
+}
+
+
+.success-icon {
+    width: 24px;
+
+    height: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #d5f2df;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+.success-message strong,
+.success-message small {
+    display: block;
+}
+
+
+.success-message strong {
+    font-size: 10px;
+}
+
+
+.success-message small {
+    margin-top: 2px;
+
+    color: #5d806c;
+
+    font-size: 9px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .registration-card {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+    }
+
+    .brand-section {
+        display: none;
+    }
+
+    .form-section {
+        padding: 35px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .registration-wrapper {
+        padding: 10px;
+    }
+
+    .registration-card {
+        border-radius: 18px;
+    }
+
+    .form-section {
+        padding: 28px 20px;
+    }
+
+    .main-brand-heading {
+        margin-bottom: 22px;
+    }
+
+    .main-logo {
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 23px;
+    }
+
+    .main-brand-text h2 {
+        font-size: 27px;
+    }
+}
+  .reg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .reg-grid .full { grid-column: 1 / -1; }
+  .reg-field { display: flex; flex-direction: column; }
+  .form-label { display: block; }
+  .form-control, .form-select { width: 100%; outline: none; font-family: inherit; }
+  .input-group { display: flex; }
+  .input-group-text { display: flex; align-items: center; padding: 0 10px; border-radius: 8px 0 0 8px; border-right: 0; }
+  .invalid-feedback { display: none; color: #dc3545; }
+  .is-invalid ~ .invalid-feedback, .is-invalid + .invalid-feedback, .has-error .invalid-feedback { display: block; }
+  .form-check { display: flex; align-items: center; gap: 6px; }
+  .d-none { display: none !important; }
+  .success-message { flex-direction: row; text-align: left; justify-content: flex-start; }
+  .success-message a { color: var(--primary); font-weight: 700; }
+  .server-error { margin-top: 12px; padding: 10px 12px; border-radius: 8px; background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; font-size: 11px; }
+  .register-button:disabled { opacity: .6; cursor: not-allowed; }
+  @media (max-width: 600px) { .reg-grid { grid-template-columns: 1fr; } }
+}

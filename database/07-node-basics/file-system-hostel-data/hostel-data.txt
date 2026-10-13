@@ -1,0 +1,16 @@
+
+StayNest PG & Hostel Finder
+
+Hostel Name: NestView Premium PG
+Location: Andheri East, Mumbai
+Rent: ?8500
+Type: PG
+Availability: Available
+
+Hostel Name: UrbanStay Student Hostel
+Location: Powai, Mumbai
+Rent: ?6500
+Type: Hostel
+Availability: Available
+
+StayNest provides comfortable accommodation for students.

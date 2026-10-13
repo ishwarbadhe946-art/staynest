@@ -1,0 +1,17 @@
+# Render Blueprint - one web service runs API + UI.
+# Dashboard -> New -> Blueprint -> select this repo.
+services:
+  - type: web
+    name: staynest
+    runtime: node
+    plan: free
+    buildCommand: npm run install:all && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: MONGO_URI
+        sync: false          # paste your MongoDB Atlas URI in the dashboard
+      - key: JWT_SECRET
+        generateValue: true

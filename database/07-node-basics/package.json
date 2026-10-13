@@ -1,0 +1,13 @@
+{
+  "name": "staynest-nodejs-basic-applications",
+  "version": "1.0.0",
+  "description": "StayNest Node.js Basic Applications demonstrating REPL, HTTP Server, File System, Buffers, Streams and Event Loop",
+  "main": "02-http-server/server.js",
+  "scripts": {
+    "server": "node 02-http-server/server.js",
+    "filesystem": "node 03-file-system/file-system.js",
+    "buffer": "node 04-buffers/buffer-demo.js",
+    "stream": "node 05-streams/stream-demo.js",
+    "eventloop": "node 06-event-loop/event-loop.js"
+  }
+}
